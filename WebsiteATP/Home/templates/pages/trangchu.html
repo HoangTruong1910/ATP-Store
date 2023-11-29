@@ -1,0 +1,623 @@
+{% extends 'pages/base.html' %} {% load static %}
+<!-- Trang Chu.html -->
+{% block title %}ATP Store{% endblock %} {% block content-trangchu %}
+<!-- Services-->
+<section class="page-section" id="services">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="section-heading text-uppercase">Dịch Vụ</h2>
+      <h3 class="section-subheading text-muted">Các dịch vụ trực tuyến.</h3>
+    </div>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <span class="fa-stack fa-4x">
+          <i class="fas fa-circle fa-stack-2x text-primary"></i>
+          <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+        </span>
+        <h4 class="my-3">Đặt Hàng Trực Tuyến</h4>
+        <p class="text-muted">
+          Đặt hàng trực tuyến là một quy trình thuận tiện và linh hoạt cho người
+          tiêu dùng để mua sắm sản phẩm và dịch vụ mà họ mong muốn thông qua
+          Internet. Thay vì phải đến các cửa hàng vật lý, người mua có thể duyệt
+          qua các trang web hoặc ứng dụng di động, chọn sản phẩm, và thực hiện
+          đơn đặt hàng chỉ bằng một vài cú nhấp chuột.
+        </p>
+      </div>
+      <div class="col-md-4">
+        <span class="fa-stack fa-4x">
+          <i class="fas fa-circle fa-stack-2x text-primary"></i>
+          <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+        </span>
+        <h4 class="my-3">Các Sản Phẩm Đa Dạng</h4>
+        <p class="text-muted">
+          Sản phẩm đa dạng mang lại một trải nghiệm mua sắm phong phú và đa
+          chiều, đáp ứng nhu cầu và sở thích đa dạng của khách hàng. Cụ thể là
+          thời trang và sự đa dạng này không chỉ mở rộng lựa chọn mà còn tạo ra
+          không gian mua sắm linh hoạt và đáp ứng sự đa dạng của người tiêu
+          dùng.
+        </p>
+      </div>
+      <div class="col-md-4">
+        <span class="fa-stack fa-4x">
+          <i class="fas fa-circle fa-stack-2x text-primary"></i>
+          <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
+        </span>
+        <h4 class="my-3">Bảo Mật Thông Tin</h4>
+        <p class="text-muted">
+          Bảo mật thông tin không chỉ là một yếu tố quan trọng trong việc bảo vệ
+          quyền riêng tư cá nhân mà còn là yếu tố kỳ quan trong đối với sự thành
+          công và uy tín của các tổ chức. Mọi người, từ người sử dụng cá nhân
+          đến doanh nghiệp và chính phủ, đều đóng vai trò quan trọng trong việc
+          duy trì và nâng cao môi trường bảo mật thông tin.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Portfolio Grid-->
+<section class="page-section bg-light" id="portfolio">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="section-heading text-uppercase">Các Sản Phẩm</h2>
+      <h3 class="section-subheading text-muted">Các sản phẩm theo từng loại</h3>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-sm-6 mb-4">
+        <!-- Portfolio item 1-->
+        <div class="portfolio-item">
+          <a
+            class="portfolio-link"
+            data-bs-toggle="modal"
+            href="#portfolioModal1"
+          >
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img
+              class="img-fluid"
+              src="{% static 'image/school-bags.webp' %}"
+              alt="..."
+            />
+          </a>
+          <div class="portfolio-caption">
+            <div class="portfolio-caption-heading">
+              Cặp Học Sinh (School Bags)
+            </div>
+            <div class="portfolio-caption-subheading text-muted">
+              Cặp học sinh, hay còn được gọi là "school bags," là một vật dụng
+              hết sức quan trọng và không thể thiếu trong cuộc sống học tập của
+              học sinh. Đây không chỉ là một phương tiện để mang theo sách vở,
+              bút chì, và vật dụng học tập, mà còn là biểu tượng của phong cách
+              cá nhân và sự tự do của học sinh.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-4">
+        <!-- Portfolio item 2-->
+        <div class="portfolio-item">
+          <a
+            class="portfolio-link"
+            data-bs-toggle="modal"
+            href="#portfolioModal2"
+          >
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img
+              class="img-fluid"
+              src="{% static 'image/balo-xu-nho.jpeg' %}"
+              alt="..."
+            />
+          </a>
+          <div class="portfolio-caption">
+            <div class="portfolio-caption-heading">
+              Balo Xù Nhỏ (Small Bags)
+            </div>
+            <div class="portfolio-caption-subheading text-muted">
+              Balo xù nhỏ là một loại túi đeo lưng nhỏ gọn, thường được thiết kế
+              với kiểu dáng xù, tạo nên sự nổi bật và độc đáo với kích thước nhỏ
+              gọn, tiện lợi , và đa số màu sắc phù hợp cho những người muốn mang
+              theo ít vật dụng và tối ưu cho các hoạt động như đi chơi , dạo phố
+              hay các sự kiện nhẹ nhàng.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-4">
+        <!-- Portfolio item 3-->
+        <div class="portfolio-item">
+          <a
+            class="portfolio-link"
+            data-bs-toggle="modal"
+            href="#portfolioModal3"
+          >
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img
+              class="img-fluid"
+              src="{% static 'image/balo-xu-lon.jpeg' %}"
+              alt="..."
+            />
+          </a>
+          <div class="portfolio-caption">
+            <div class="portfolio-caption-heading">Balo Xù Lớn (Big Bags)</div>
+            <div class="portfolio-caption-subheading text-muted">
+              Balo xù lớn là một kiểu balo thường được thiết kế với kiểu dáng
+              xù, mang lại sự nổi bật và phóng khoáng cho người sử dụng với kích
+              thước lớn, cung cấp không gian lưu trữ đủ rộng rãi để đựng nhiều
+              vật dụng cá nhân, sách vở, laptop, hay thậm chí quần áo khi cần
+              thiết tạo nên một vẻ ngoại hình độc đáo và cá tính.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About-->
+<section class="page-section" id="about">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="section-heading text-uppercase">About</h2>
+      <h3 class="section-subheading text-muted">
+        Lorem ipsum dolor sit amet consectetur.
+      </h3>
+    </div>
+    <ul class="timeline">
+      <li>
+        <div class="timeline-image">
+          <img
+            class="rounded-circle img-fluid-about"
+            src="{% static 'image/about/1.jpg' %}"
+            alt="..."
+          />
+        </div>
+        <div class="timeline-panel">
+          <div class="timeline-heading">
+            <h4>2009-2011</h4>
+            <h4 class="subheading">Our Humble Beginnings</h4>
+          </div>
+          <div class="timeline-body">
+            <p class="text-muted">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
+              voluptatum eius sapiente, totam reiciendis temporibus qui
+              quibusdam, recusandae sit vero unde, sed, incidunt et ea quo
+              dolore laudantium consectetur!
+            </p>
+          </div>
+        </div>
+      </li>
+      <li class="timeline-inverted">
+        <div class="timeline-image">
+          <img
+            class="rounded-circle img-fluid-about"
+            src="{% static 'image/about/2.jpg' %}"
+            alt="..."
+          />
+        </div>
+        <div class="timeline-panel">
+          <div class="timeline-heading">
+            <h4>March 2011</h4>
+            <h4 class="subheading">An Agency is Born</h4>
+          </div>
+          <div class="timeline-body">
+            <p class="text-muted">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
+              voluptatum eius sapiente, totam reiciendis temporibus qui
+              quibusdam, recusandae sit vero unde, sed, incidunt et ea quo
+              dolore laudantium consectetur!
+            </p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="timeline-image">
+          <img
+            class="rounded-circle img-fluid-about"
+            src="{% static 'image/about/3.jpg' %}"
+            alt="..."
+          />
+        </div>
+        <div class="timeline-panel">
+          <div class="timeline-heading">
+            <h4>December 2015</h4>
+            <h4 class="subheading">Transition to Full Service</h4>
+          </div>
+          <div class="timeline-body">
+            <p class="text-muted">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
+              voluptatum eius sapiente, totam reiciendis temporibus qui
+              quibusdam, recusandae sit vero unde, sed, incidunt et ea quo
+              dolore laudantium consectetur!
+            </p>
+          </div>
+        </div>
+      </li>
+      <li class="timeline-inverted">
+        <div class="timeline-image">
+          <img
+            class="rounded-circle img-fluid-about"
+            src="{% static 'image/about/4.jpg' %}"
+            alt="..."
+          />
+        </div>
+        <div class="timeline-panel">
+          <div class="timeline-heading">
+            <h4>July 2020</h4>
+            <h4 class="subheading">Phase Two Expansion</h4>
+          </div>
+          <div class="timeline-body">
+            <p class="text-muted">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
+              voluptatum eius sapiente, totam reiciendis temporibus qui
+              quibusdam, recusandae sit vero unde, sed, incidunt et ea quo
+              dolore laudantium consectetur!
+            </p>
+          </div>
+        </div>
+      </li>
+      <li class="timeline-inverted">
+        <div class="timeline-image">
+          <h4>
+            Be Part
+            <br />
+            Of Our
+            <br />
+            Story!
+          </h4>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- Contact-->
+<section
+  class="page-section"
+  id="contact"
+  style="background-image: url('{% static 'image/map-image.png' %}')"
+>
+  <div class="container">
+    <div class="text-center">
+      <h2 class="section-heading text-uppercase">Contact Us</h2>
+      <h3 class="section-subheading text-muted">
+        Lorem ipsum dolor sit amet consectetur.
+      </h3>
+    </div>
+    <!-- * * * * * * * * * * * * * * *-->
+    <!-- * * SB Forms Contact Form * *-->
+    <!-- * * * * * * * * * * * * * * *-->
+    <!-- This form is pre-integrated with SB Forms.-->
+    <!-- To make this form functional, sign up at-->
+    <!-- https://startbootstrap.com/solution/contact-forms-->
+    <!-- to get an API token!-->
+    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+      <div class="row align-items-stretch mb-5">
+        <div class="col-md-6">
+          <div class="form-group">
+            <!-- Name input-->
+            <input
+              class="form-control"
+              id="name"
+              type="text"
+              placeholder="Your Name *"
+              data-sb-validations="required"
+            />
+            <div class="invalid-feedback" data-sb-feedback="name:required">
+              A name is required.
+            </div>
+          </div>
+          <div class="form-group">
+            <!-- Email address input-->
+            <input
+              class="form-control"
+              id="email"
+              type="email"
+              placeholder="Your Email *"
+              data-sb-validations="required,email"
+            />
+            <div class="invalid-feedback" data-sb-feedback="email:required">
+              An email is required.
+            </div>
+            <div class="invalid-feedback" data-sb-feedback="email:email">
+              Email is not valid.
+            </div>
+          </div>
+          <div class="form-group mb-md-0">
+            <!-- Phone number input-->
+            <input
+              class="form-control"
+              id="phone"
+              type="tel"
+              placeholder="Your Phone *"
+              data-sb-validations="required"
+            />
+            <div class="invalid-feedback" data-sb-feedback="phone:required">
+              A phone number is required.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group form-group-textarea mb-md-0">
+            <!-- Message input-->
+            <textarea
+              class="form-control"
+              id="message"
+              placeholder="Your Message *"
+              data-sb-validations="required"
+            ></textarea>
+            <div class="invalid-feedback" data-sb-feedback="message:required">
+              A message is required.
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Submit success message-->
+      <!---->
+      <!-- This is what your users will see when the form-->
+      <!-- has successfully submitted-->
+      <div class="d-none" id="submitSuccessMessage">
+        <div class="text-center text-white mb-3">
+          <div class="fw-bolder">Form submission successful!</div>
+          To activate this form, sign up at
+          <br />
+          <a href="https://startbootstrap.com/solution/contact-forms"
+            >https://startbootstrap.com/solution/contact-forms</a
+          >
+        </div>
+      </div>
+      <!-- Submit error message-->
+      <!---->
+      <!-- This is what your users will see when there is-->
+      <!-- an error submitting the form-->
+      <div class="d-none" id="submitErrorMessage">
+        <div class="text-center text-danger mb-3">Error sending message!</div>
+      </div>
+      <!-- Submit Button-->
+      <div class="text-center">
+        <button
+          class="btn btn-primary btn-xl text-uppercase disabled"
+          id="submitButton"
+          type="submit"
+        >
+          Send Message
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- Portfolio Modals-->
+<!-- Portfolio item 1 modal popup-->
+<div
+  class="portfolio-modal modal fade"
+  id="portfolioModal1"
+  tabindex="-1"
+  role="dialog"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="close-modal" data-bs-dismiss="modal">
+        <img src="{% static 'image/close-icon.svg' %}" alt="Close modal" />
+      </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="modal-body">
+              <!-- Project details-->
+              <h2 class="text-uppercase">Cặp Học Sinh</h2>
+              <p class="item-intro text-muted">
+                School Bags - Student Backpack
+              </p>
+              <img
+                class="img-fluid-dialog d-block mx-auto"
+                src="{% static 'image/school-bags.webp' %}"
+                alt="..."
+              />
+              <p>
+                1) Thiết Kế và Kiểu Dáng: Cặp học sinh hiện đại xuất hiện trong
+                nhiều kiểu dáng và màu sắc khác nhau, từ những kiểu truyền thống
+                đến những thiết kế hiện đại và sáng tạo. Chúng có thể có các họa
+                tiết, hình ảnh, hoặc biểu tượng yêu thích của học sinh. 2) Chất
+                Liệu Chống Nước và Bền Bỉ: Phần lớn các cặp học sinh được làm từ
+                chất liệu chống nước và bền bỉ như nylon, polyester, hoặc vải
+                canvas để bảo vệ sách và vật dụng bên trong khỏi mưa và mọi điều
+                kiện thời tiết. 3) Nhiều Ngăn và Kích Thước: Cặp học sinh thường
+                được thiết kế với nhiều ngăn và túi để hỗ trợ việc tổ chức vật
+                dụng học tập. Có cặp có ngăn đựng laptop, ngăn chống sốc để bảo
+                vệ vật phẩm nhạy cảm, và túi nhỏ cho đồ tiện ích. 4) An Toàn và
+                Tiện Lợi: Một số cặp học sinh có tính năng an toàn như khóa kéo
+                chống trộm hoặc chất liệu chống cắt, giúp bảo vệ tài sản của học
+                sinh khi di chuyển trong môi trường đô thị. 5) Quai Đeo Đàn Hồi
+                và Thoải Mái: Quai đeo của cặp thường có lớp đàn hồi, êm ái và
+                có thể điều chỉnh, tạo sự thoải mái khi mang theo lâu dài.
+              </p>
+              <ul class="list-inline">
+                <li>
+                  <strong>Loại sản phẩm :</strong>
+                  School Bags - Student Backpack
+                </li>
+                <li>
+                  <strong>Phân Loại :</strong>
+                  Sản Phẩm Tầm Trung
+                </li>
+              </ul>
+              <button
+                class="btn btn-primary btn-xl text-uppercase"
+                type="button"
+                onclick="window.location.href='{% url 'products' %}'"
+              >
+                <i class="fas fa-eye me-1"></i>
+                Xem Thêm
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Portfolio item 2 modal popup-->
+<div
+  class="portfolio-modal modal fade"
+  id="portfolioModal2"
+  tabindex="-1"
+  role="dialog"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="close-modal" data-bs-dismiss="modal">
+        <img src="{% static 'image/close-icon.svg' %}" alt="Close modal" />
+      </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="modal-body">
+              <!-- Project details-->
+              <h2 class="text-uppercase">Balo Xù Nhỏ</h2>
+              <p class="item-intro text-muted">Small Bags - Small Backpack</p>
+              <img
+                class="img-fluid-dialog d-block mx-auto"
+                src="{% static 'image/balo-xu-nho.jpeg' %}"
+                alt="..."
+              />
+              <p>
+                1) Kích Thước Nhỏ Gọn: Balo xù nhỏ thường có kích thước nhỏ, phù
+                hợp cho những người muốn mang theo ít vật dụng và tối ưu cho các
+                hoạt động như đi chơi, dạo phố, hay các sự kiện nhẹ nhàng. 2)
+                Kiểu Dáng Xù Độc Đáo: Một đặc điểm nổi bật của balo xù là bề mặt
+                của nó có thiết kế xù, tạo nên một vẻ ngoại hình độc đáo và
+                phong cách. Họa tiết xù có thể là các hình họa, ký tự, hoặc các
+                hình thức sáng tạo khác nhau. 3) Chất Liệu Nhẹ và Linh Hoạt:
+                Balo xù nhỏ thường được làm từ chất liệu nhẹ như vải dù, vải
+                canvas, hay chất liệu synthetic, giúp giảm trọng lượng tổng cộng
+                và làm cho balo dễ dàng mang theo. 4) Quai Đeo Điều Chỉnh: Quai
+                đeo của balo thường có thể điều chỉnh được, cho phép người sử
+                dụng điều chỉnh chiều dài sao cho phù hợp với cơ thể và cách
+                mang của mình. 5) Ngăn Chính và Túi Nhỏ: Mặ despite ích chính
+                của balo thường có một ngăn chính đủ rộng để đựng ví, điện
+                thoại, và các vật dụng cơ bản. Ngoài ra, balo cũng có thể có túi
+                nhỏ phía trước hoặc hai bên để tiện lợi trong việc tổ chức. 6)
+                Màu Sắc Sặc Sỡ: Balo xù nhỏ thường xuất hiện với nhiều màu sắc
+                sặc sỡ và trẻ trung, tạo nên sự vui tươi và tương tác với phong
+                cách cá nhân của người sử dụng. 7) Phổ Biến Trong Thời Trang
+                Đường Phố: Balo xù nhỏ thường được ưa chuộng trong giới thời
+                trang đường phố, là phụ kiện thú vị và thách thức giới hạn của
+                kiểu dáng truyền thống. 8) Phù Hợp Cho Nhiều Hoạt Động: Được
+                thiết kế để phù hợp với nhiều hoạt động nhẹ nhàng, balo xù nhỏ
+                là một sự lựa chọn phổ biến cho những người muốn di chuyển thoải
+                mái và linh hoạt.
+              </p>
+              <ul class="list-inline">
+                <li>
+                  <strong>Loại sản phẩm :</strong>
+                  Small Bags - Small Backpack
+                </li>
+                <li>
+                  <strong>Phân loại :</strong>
+                  Sản Phẩm Tầm Trung
+                </li>
+              </ul>
+              <button
+                class="btn btn-primary btn-xl text-uppercase"
+                type="button"
+                onclick="window.location.href='{% url 'products' %}'"
+              >
+                <i class="fas fa-eye me-1"></i>
+               Xem Thêm
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Portfolio item 3 modal popup-->
+<div
+  class="portfolio-modal modal fade"
+  id="portfolioModal3"
+  tabindex="-1"
+  role="dialog"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="close-modal" data-bs-dismiss="modal">
+        <img src="{% static 'image/close-icon.svg' %}" alt="Close modal" />
+      </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="modal-body">
+              <!-- Project details-->
+              <h2 class="text-uppercase">Balo Xù Lớn</h2>
+              <p class="item-intro text-muted">Big Bags - Big Backpack</p>
+              <img
+                class="img-fluid-dialog d-block mx-auto"
+                src="{% static 'image/balo-xu-lon.jpeg' %}"
+                alt="..."
+              />
+              <p>
+                1) Kích Thước Rộng Lớn: Balo xù lớn thường có kích thước lớn,
+                cung cấp không gian lưu trữ đủ rộng rãi để đựng nhiều vật dụng
+                cá nhân, sách vở, laptop, hay thậm chí quần áo khi cần thiết. 2)
+                Kiểu Dáng Xù Nổi Bật: Điểm đặc biệt của balo là bề mặt có thiết
+                kế xù, tạo nên một vẻ ngoại hình độc đáo và cá tính. Họa tiết xù
+                có thể là các hình ảnh, logo, hoặc các ký tự sáng tạo, tăng thêm
+                sự phóng khoáng cho túi xách. 3) Chất Liệu Bền Bỉ và Chống Nước:
+                Balo xù lớn thường được làm từ chất liệu bền bỉ như vải canvas,
+                nylon, hoặc vải dù, giúp bảo vệ nội dung bên trong khỏi thời
+                tiết xấu và môi trường khắc nghiệt. 4) Nhiều Ngăn và Túi Phụ: Để
+                tối ưu hóa tổ chức, balo xù lớn thường có nhiều ngăn và túi phụ,
+                giúp người sử dụng dễ dàng sắp xếp và tìm kiếm vật dụng một cách
+                hiệu quả. 5) Quai Đeo Chắc Chắn và Thoải Mái: Quai đeo của balo
+                thường được thiết kế chắc chắn và có thể điều chỉnh, mang lại
+                cảm giác thoải mái và dễ dàng khi di chuyển. 6) Phụ Kiện An
+                Toàn: Một số mẫu balo xù lớn có thể được trang bị các tính năng
+                an toàn như khóa chống trộm hoặc phản quang, tăng cường tính bảo
+                mật khi sử dụng trong môi trường đô thị. 7) Phổ Biến Trong Thời
+                Trang Đường Phố: Balo xù lớn thường là một phần của thời trang
+                đường phố và được ưa chuộng trong cộng đồng trẻ trung và sáng
+                tạo. 8) Đa Dạng Màu Sắc và Phong Cách: Các mẫu balo xù lớn có
+                sẵn trong nhiều màu sắc và kiểu dáng khác nhau, cho phép người
+                sử dụng tùy chọn theo phong cách cá nhân của họ.
+              </p>
+              <ul class="list-inline">
+                <li>
+                  <strong>Loại sản phẩm :</strong>
+                  Big Bags - Big Backpack
+                </li>
+                <li>
+                  <strong>Phân loại :</strong>
+                  Sản Phẩm Cao Cấp
+                </li>
+              </ul>
+              <button
+                class="btn btn-primary btn-xl text-uppercase"
+                type="button"
+                onclick="window.location.href='{% url 'products' %}'"
+              >
+                <i class="fas fa-eye me-1"></i>
+                Xem Thêm 
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
